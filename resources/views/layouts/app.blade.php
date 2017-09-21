@@ -18,7 +18,7 @@
         <nav class="nav has-shadow">
             <div class="container">
               <div class="nav-left">
-                  <a href="{{ route('home') }}" class="nav-item">
+                  <a href="{{ route('home') }}" class="nav-item m-r-30">
                     <img src="{{ asset('/images/logo.png') }}" alt="Aztutos Logo">
                   </a>
                   <a href="#" class="nav-item is-tab is-hidden-mobile">Learn</a>
@@ -27,9 +27,9 @@
               </div>
 
               <div class="nav-right" style="overflow: visible;">
-                  @if(!Auth::guest())
-                      <a href="#" class="nav-item is-open is-tab">Login</a>
-                      <a href="#" class="nav-item is-tab">Join us community</a>
+                  @if(Auth::guest())
+                      <a href="{{ route('login') }}" class="nav-item is-open is-tab">Login</a>
+                      <a href="{{ route('register') }}" class="nav-item is-tab">Join us community</a>
                   @else
 
                   <!--  <div class="dropdown is-open is-aligned-right m-t-10">
@@ -88,6 +88,7 @@
 
              </div>
         </nav>
+
         @yield('content')
     </div>
 
