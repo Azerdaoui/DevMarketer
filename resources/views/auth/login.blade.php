@@ -29,7 +29,7 @@
                     @endif
                     <b-checkbox name="remember" class="m-t-10">Remember me</b-checkbox>
 
-                    <input type="submit" class="button is-primary is-outlined is-fullwidth m-t-20" value="Log in">
+                    <input type="submit" class="button is-success is-outlined is-fullwidth m-t-20" value="Log in">
               </form>
           </div> <!-- end of .card-content-->
 
